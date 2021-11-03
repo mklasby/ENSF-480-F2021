@@ -1,15 +1,16 @@
 public class Border extends Decorator {
+    public int thickness;
 
-    protected int thickness;
-
-    public Border(Widget w, int t) {
+    public Border(Widget w, int thick) {
         super(w);
-        thickness = t;
+        thickness = thick;
     }
 
     @Override
     public void display() {
         widget.display();
-        System.out.printf("...with border of thickness %d\n", thickness);
+        System.out.printf("...with a border of thickness: %d\n", thickness);
+
     }
+
 }

@@ -1,16 +1,19 @@
 public class Scrollbar extends Decorator {
 
-    private String type;
+    public String type;
 
-    public Scrollbar(Widget w, String type) {
+    public Scrollbar(Widget w, String typeIn) {
         super(w);
-        this.type = type;
+        type = typeIn;
+        // TODO Auto-generated constructor stub
     }
 
     @Override
     public void display() {
         widget.display();
-        System.out.printf("...with Scrollbar of type %s\n", type);
+        System.out.printf("...it's scrollbar type is: %s\n", type);
+
+        // TODO Auto-generated method stub
 
     }
 

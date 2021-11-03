@@ -1,15 +1,14 @@
 public class Text implements Widget {
+    public int length;
+    public String text;
 
-    protected int len;
-    protected String text;
-
-    public Text(String text) {
-        this.text = text;
-        this.len = text.length();
+    public Text(String tIn) {
+        text = tIn;
+        length = tIn.length();
     }
 
     @Override
     public void display() {
-        System.out.printf("Text contains: %s\nWith Length = %d\n", text, len);
+        System.out.printf("Text contains: %s\nIt's length is: %d\n", text, length);
     }
 }
