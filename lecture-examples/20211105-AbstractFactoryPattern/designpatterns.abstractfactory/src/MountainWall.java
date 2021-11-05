@@ -1,8 +1,8 @@
 
 public class MountainWall extends Wall {
 
-    public MountainWall(String string, double x1, double x2, double y1, double y2) {
-        this.appearance = string;
+    public MountainWall(String appearance, double x1, double x2, double y1, double y2) {
+        this.appearance = appearance;
         this.x1 = x1;
         this.x2 = x2;
         this.y1 = y1;
